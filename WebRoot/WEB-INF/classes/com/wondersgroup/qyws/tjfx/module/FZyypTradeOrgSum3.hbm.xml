@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="FZyypTradeOrgSum3" table="F_ZYYP_TRADE_ORG_SUM_3">
+		<id name="id" column="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="hosp_id" column="hosp_id" type="java.lang.String" />
+		<property name="ddjgdj" column="ddjgdj" type="java.lang.String" />
+		<property name="yd_id" column="yd_id" type="java.lang.String" />
+		<property name="jsny" column="jsny" type="java.lang.String" />
+		<property name="xzlb" column="xzlb" type="java.lang.String" />
+		<property name="fy" column="fy" type="java.lang.Double" />
+		<property name="fy_p" column="fy_p" type="java.lang.Double" />
+		<property name="ts" column="ts" type="java.lang.Long" />
+		<property name="ts_p" column="ts_p" type="java.lang.Long" />
+		<property name="rc" column="rc" type="java.lang.Long" />
+		<property name="tb_fy" column="tb_fy" type="java.lang.Double" insert="false" update="false"/>
+		<property name="tb_fy_p" column="tb_fy" type="java.lang.Double" />
+		<property name="tb_ts" column="tb_ts" type="java.lang.Long" />
+		<property name="tb_ts_p" column="tb_ts_p" type="java.lang.Long" />
+		<property name="tb_rc" column="tb_rc" type="java.lang.Long" />
+		<property name="ftb_fy" column="ftb_fy" type="java.lang.Double" />
+		<property name="ftb_fy_p" column="ftb_fy_p" type="java.lang.Double" />
+		<property name="ftb_ts" column="ftb_ts" type="java.lang.Long" />
+		<property name="ftb_ts_p" column="ftb_ts_p" type="java.lang.Long" />
+		<property name="ftb_rc" column="ftb_rc" type="java.lang.Long" />
+	</class>
+</hibernate-mapping>

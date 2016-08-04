@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="Kb01" table="Kb01">
+		<id name="aaz107" column="aaz107" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="aaa027" column="aaa027" type="java.lang.String" />
+		<property name="akb020" column="akb020" type="java.lang.String" />
+		<property name="akb021" column="akb021" type="java.lang.String" />
+		<property name="akb022" column="akb022" type="java.lang.String" />
+		<property name="aab112" column="aab112" type="java.lang.String" />
+		<property name="aka101" column="aka101" type="java.lang.String" />
+		<property name="akb011" column="akb011" type="java.lang.String" />
+		<property name="akb012" column="akb012" type="java.lang.String" />
+		<property name="akb023" column="akb023" type="java.lang.String" />
+		<property name="akb026" column="akb026" type="java.lang.String" />
+		<property name="akf015" column="akf015" type="java.lang.Integer" />
+		<property name="aae100" column="aae100" type="java.lang.String" />
+		<property name="akb100" column="akb100" type="java.lang.String" />
+		<property name="akb101" column="akb101" type="java.lang.String" />
+		<property name="aab013" column="aab013" type="java.lang.String" />
+		<property name="aab304" column="aab304" type="java.lang.String" />
+		<property name="aab062" column="aab062" type="java.lang.String" />
+		<property name="aae004" column="aae004" type="java.lang.String" />
+		<property name="aae006" column="aae006" type="java.lang.String" />
+		<property name="aae007" column="aae007" type="java.lang.String" />
+		<property name="aae005" column="aae005" type="java.lang.String" />
+		<property name="aae030" column="aae030" type="java.lang.Integer" />
+		<property name="aae031" column="aae031" type="java.lang.Integer" />
+		<property name="akb102" column="akb102" type="java.lang.String" />
+		<property name="apa151" column="apa151" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

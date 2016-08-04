@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="Kf05" table="Kf05">
+		<id name="aaz107" column="aaz107" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="aaa027" column="aaa027" type="java.lang.String" />
+		<property name="akb020" column="akb020" type="java.lang.String" />
+		<property name="aaz307" column="aaz307" type="java.lang.String" />
+		<property name="aac003" column="aac003" type="java.lang.String" />
+		<property name="aab014" column="aab014" type="java.lang.String" />
+		<property name="aaz263" column="aaz263" type="java.lang.String" />
+		<property name="akc049" column="akc049" type="java.lang.String" />
+		<property name="aaf009" column="aaf009" type="java.lang.String" />
+		<property name="akc054" column="akc054" type="java.lang.String" />
+		<property name="akc056" column="akc056" type="java.lang.String" />
+		<property name="akc057" column="akc057" type="java.lang.String" />
+		<property name="akc051" column="akc051" type="java.lang.String" />
+		<property name="akc052" column="akc052" type="java.lang.String" />
+		<property name="aae100" column="aae100" type="java.lang.String" />
+		<property name="apa151" column="apa151" type="java.lang.String" />
+		<property name="akc053" column="akc053" type="java.lang.String" />
+		<property name="aae005" column="aae005" type="java.lang.String" />
+		<property name="aae013" column="aae013" type="java.lang.String" />
+		<property name="akc278" column="akc278" type="java.lang.String" />
+		<property name="akc279" column="akc279" type="java.lang.String" />
+		<property name="akc281" column="akc281" type="java.lang.String" />
+		<property name="akc282" column="akc282" type="java.lang.String" />
+		<property name="akc283" column="akc283" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

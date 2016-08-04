@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="FZyypTradeDrZyypSum2" table="F_ZYYP_TRADE_DR_ZYYP_SUM_2">
+		<id name="id" column="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="dr_id" column="dr_id" type="java.lang.String" />
+		<property name="jsny" column="jsny" type="java.lang.String" />
+		<property name="xzlb" column="xzlb" type="java.lang.String" />
+		<property name="hosp_id" column="hosp_id" type="java.lang.String" />
+		<property name="yd_id" column="yd_id" type="java.lang.String" />
+		<property name="mx_id" column="mx_id" type="java.lang.String" />
+		<property name="sl" column="sl" type="java.lang.Double" />
+		<property name="fy" column="fy" type="java.lang.Double" />
+	</class>
+</hibernate-mapping>

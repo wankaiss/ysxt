@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="Kc24" table="kc24">
+		<id name="aaz308" column="aaz308" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="aaa027" column="aaa027" type="java.lang.String" />
+		<property name="akb020" column="akb020" type="java.lang.String" />
+		<property name="aac003" column="aac003" type="java.lang.String" />
+		<property name="aac001" column="aac001" type="java.lang.Long" />
+		<property name="aac002" column="aac002" type="java.lang.String" />
+		<property name="akc190" column="akc190" type="java.lang.String" />
+		<property name="akc021" column="akc021" type="java.lang.String" />
+		<property name="akc194" column="akc194" type="java.util.Date" />
+		<property name="aaz217" column="aaz217" type="java.lang.Long" />
+		<property name="ake039" column="ake039" type="java.lang.Double" />
+		<property name="ake029" column="ake029" type="java.lang.Double" />
+		<property name="ake035" column="ake035" type="java.lang.Double" />
+		<property name="ake043" column="ake043" type="java.lang.Double" />
+		<property name="ake032" column="ake032" type="java.lang.Double" />
+		<property name="ake042" column="ake042" type="java.lang.Double" />
+		<property name="ake038" column="ake038" type="java.lang.Double" />
+		<property name="akc254" column="akc254" type="java.lang.Double" />
+		<property name="akc253" column="akc253" type="java.lang.Double" />
+		<property name="akc264" column="akc264" type="java.lang.Double" />
+		<property name="aka151" column="aka151" type="java.lang.Double" />
+		<property name="aka153" column="aka153" type="java.lang.Double" />
+		<property name="ake092" column="ake092" type="java.lang.Double" />
+		<property name="aae418" column="aae418" type="java.lang.Double" />
+		<property name="ake026" column="ake026" type="java.lang.Double" />
+		<property name="akb067" column="akb067" type="java.lang.Double" />
+		<property name="baz308" column="baz308" type="java.lang.Long" />
+		<property name="aaz080" column="aaz080" type="java.lang.String" />
+		<property name="aaz371" column="aaz371" type="java.lang.String" />
+		<property name="aaz372" column="aaz372" type="java.lang.String" />
+		<property name="aaz370" column="aaz370" type="java.lang.String" />
+		<property name="aaz307" column="aaz307" type="java.lang.String" />
+		<property name="aab014" column="aab014" type="java.lang.String" />
+		<property name="aaz263" column="aaz263" type="java.lang.String" />
+		<property name="aae031" column="aae031" type="java.lang.Integer" />
+		<property name="akc185" column="akc185" type="java.lang.String" />
+		<property name="aka120" column="aka120" type="java.lang.String" />
+		<property name="akc186" column="akc186" type="java.lang.String" />
+		<property name="akc188" column="akc188" type="java.lang.String" />
+		<property name="akc274" column="akc274" type="java.lang.String" />
+		<property name="akc275" column="akc275" type="java.lang.String" />
+		<property name="akc276" column="akc276" type="java.lang.String" />
+		<property name="akc277" column="akc277" type="java.lang.String" />
+		<property name="aka005" column="aka005" type="java.lang.String" />
+		<property name="aka006" column="aka006" type="java.lang.String" />
+		<property name="aka007" column="aka007" type="java.lang.String" />
+		<property name="aae030" column="aae030" type="java.lang.Integer" />
+		<property name="akc050" column="akc050" type="java.lang.String" />
+		<property name="akc193" column="akc193" type="java.lang.String" />
+		<property name="aae036" column="aae036" type="java.util.Date" />
+		<property name="aae140" column="aae140" type="java.lang.String" />
+	</class>                      
+</hibernate-mapping>              

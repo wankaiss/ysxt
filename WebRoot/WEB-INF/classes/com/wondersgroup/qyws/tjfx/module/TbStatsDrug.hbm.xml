@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="TbStatsDrug" table="TB_STATS_DRUG">
+		<id name="ID" column="ID" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="SJDM" column="SJDM" type="java.lang.String" />
+		<property name="YBH" column="YBH" type="java.lang.String" />
+		<property name="XM" column="XM" type="java.lang.String" />
+		<property name="QXDM" column="QXDM" type="java.lang.String" />
+		<property name="TCDM" column="TCDM" type="java.lang.String" />
+		<property name="TBBZ" column="TBBZ" type="java.lang.String" />
+		<property name="TBMC" column="TBMC" type="java.lang.String" />
+		<property name="RYLB" column="RYLB" type="java.lang.String" />
+		<property name="CFYFY" column="CFYFY" type="java.lang.Double" />
+		<property name="FCFYFY" column="FCFYFY" type="java.lang.Double" />
+		<property name="ZFY" column="ZFY" type="java.lang.Double" />
+		<property name="JGID" column="JGID" type="java.lang.String" />
+		<property name="JDZ" column="JDZ" type="java.lang.Double" />
+		<property name="YXBZ" column="YXBZ" type="java.lang.String" />
+		<property name="XGSJ" column="XGSJ" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

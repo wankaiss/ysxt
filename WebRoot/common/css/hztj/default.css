@@ -1,0 +1,38 @@
+
+
+.list{border-left:1px solid #DDDDDD;border-top:1px solid #DDDDDD;width:100%;}
+.list thead td{border-right:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD;background-color:#F5F5F5;font-size:13px;text-align:left;padding-left:5px;height:35px;line-height:35px;color:#555555;font-weight:bold;}
+.list tbody td{border-right:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD;background-color:#FFFFFF;font-size:13px;text-align:left;padding-left:5px;height:30px;line-height:30px;color:#555555;}
+.list tfoot td{border-right:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD;background-color:#F5F5F5;font-size:13px;text-align:left;height:30px;line-height:30px;color:#555555;}
+
+.list .edit{background:url(../../images/icos-dark.png) -35px -197px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .edit:hover{background:url(../../images/icos-white.png) -35px -197px no-repeat #000000;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .view{background:url(../../images/icos-dark.png) -16px -161px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .view:hover{background:url(../../images/icos-white.png) -16px -161px no-repeat #000000;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .del{background:url(../../images/icos-dark.png) -179px -270px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .del:hover{background:url(../../images/icos-white.png) -179px -270px no-repeat #000000;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+
+.list .pause{background:url(../../images/icos-dark.png) -17px 0px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .pause:hover{background:url(../../images/icos-white.png) -17px 0px no-repeat #000000;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+
+.list .resume{background:url(../../images/icos-dark.png) -143px -197px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .resume:hover{background:url(../../images/icos-white.png) -143px -197px no-repeat #000000;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+
+
+
+.list .add{background:url(../../images/icos-dark.png) -18px -72px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .add:hover{background:url(../../images/icos-white.png) -18px -72px no-repeat #3eafe0;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .add2{background:url(../../images/icos-dark.png) -180px -198px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .add2:hover{background:url(../../images/icos-white.png) -180px -198px no-repeat #3eafe0;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+
+.add{background:url(../../images/icos-dark.png) -18px -72px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.add:hover{background:url(../../images/icos-white.png) -18px -72px no-repeat #3eafe0;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.add2{background:url(../../images/icos-dark.png) -180px -198px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.add2:hover{background:url(../../images/icos-white.png) -180px -198px no-repeat #3eafe0;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+
+
+.list .add3{background:url(../../images/icos-dark.png) -90px -270px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .add3:hover{background:url(../../images/icos-white.png) -90px -270px no-repeat #3eafe0;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .add4{background:url(../../images/icos-dark.png) -108px -270px no-repeat #ffffff;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+.list .add4:hover{background:url(../../images/icos-white.png) -108px -270px no-repeat #3eafe0;display:block;width:18px;height:18px;float:left;margin-right:3px;}
+

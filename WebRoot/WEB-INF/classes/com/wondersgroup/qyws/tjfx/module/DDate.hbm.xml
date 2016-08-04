@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="DDate" table="DDate">
+		<id name="date_id" column="date_id" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="date_des" column="date_des" type="java.lang.String" />
+		<property name="date" column="date" type="java.lang.String" />
+		<property name="week" column="week" type="java.lang.String" />
+		<property name="month" column="month" type="java.lang.String" />
+		<property name="season" column="season" type="java.lang.String" />
+		<property name="day" column="day" type="java.lang.String" />
+		<property name="year" column="year" type="java.lang.String" />
+		<property name="ybnd_zg" column="ybnd_zg" type="java.lang.String" />
+		<property name="ybnd_jm" column="ybnd_jm" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

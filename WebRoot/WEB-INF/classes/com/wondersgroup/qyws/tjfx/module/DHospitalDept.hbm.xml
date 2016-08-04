@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="DHospitalDept" table="D_HOSPITAL_DEPT">
+		<id name="dept_id" column="dept_id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="hosp_id" column="hosp_id" type="java.lang.String" />
+		<property name="ksdm" column="ksdm" type="java.lang.String" />
+		<property name="ksmc" column="ksmc" type="java.lang.String" />
+		<property name="zt" column="zt" type="java.lang.String" />
+		<property name="qssj" column="qssj" type="java.util.Date" />
+		<property name="jssj" column="jssj" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

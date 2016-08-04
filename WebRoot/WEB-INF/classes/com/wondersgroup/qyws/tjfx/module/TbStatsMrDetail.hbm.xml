@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="TbStatsMrDetail" table="TB_STATS_MR_DETAIL">
+		<id name="ID" column="ID" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="YBH" column="YBH" type="java.lang.String" />
+		<property name="SFZH" column="SFZH" type="java.lang.String" />
+		<property name="RYLB" column="RYLB" type="java.lang.String" />
+		<property name="XM" column="XM" type="java.lang.String" />
+		<property name="JZSJ" column="JZSJ" type="java.util.Date" />
+		<property name="SJDM" column="SJDM" type="java.lang.String" />
+		<property name="JZLX" column="JZLX" type="java.lang.String" />
+		<property name="JZFY" column="JZFY" type="java.lang.Double" />
+		<property name="ZJLSH" column="ZJLSH" type="java.lang.String" />
+		<property name="RYZDDM" column="RYZDDM" type="java.lang.String" />
+		<property name="RYZDMC" column="RYZDMC" type="java.lang.String" />
+		<property name="YSID" column="YSID" type="java.lang.String" />
+		<property name="DTJG" column="DTJG" type="java.lang.Double" />
+		<property name="DTWS" column="DTWS" type="java.lang.Double" />
+		<property name="WPJGID" column="WPJGID" type="java.lang.String" />
+		<property name="WPYSID" column="WPYSID" type="java.lang.String" />
+		<property name="JGID" column="JGID" type="java.lang.String" />
+		<property name="QXDM" column="QXDM" type="java.lang.String" />
+		<property name="YXBZ" column="YXBZ" type="java.lang.String" />
+		<property name="XGSJ" column="XGSJ" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

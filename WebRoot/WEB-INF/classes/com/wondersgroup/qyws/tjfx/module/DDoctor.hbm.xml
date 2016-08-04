@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="DDoctor" table="D_DOCTOR">
+		<id name="dr_id" column="dr_id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="xm" column="xm" type="java.lang.String" />
+		<property name="hosp_id" column="hosp_id" type="java.lang.String" />
+		<property name="ysdm" column="ysdm" type="java.lang.String" />
+		<property name="zjlx" column="zjlx" type="java.lang.Integer" />
+		<property name="zjhm" column="zjhm" type="java.lang.String" />
+		<property name="zgzs" column="zgzs" type="java.lang.String" />
+		<property name="zyzs" column="zyzs" type="java.lang.String" />
+		<property name="zch" column="zch" type="java.lang.String" />
+		<property name="zyfw" column="zyfw" type="java.lang.String" />
+		<property name="zt" column="zt" type="java.lang.String" />
+		<property name="qssj" column="qssj" type="java.util.Date" />
+		<property name="jssj" column="jssj" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

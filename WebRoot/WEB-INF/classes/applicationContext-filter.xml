@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<!-- 静态不需要过滤的过滤器  -->
+	<bean id="noneFilter" class="com.wondersgroup.qyws.tjfx.common.filter.NoneFilter"></bean>
+	
+    <!-- Hibernate过滤器，在有数据库操作中使用，放于struts2之前，登录验证之后（或之前） -->
+    <bean id="hibernateFilter" class="org.springframework.orm.hibernate3.support.OpenSessionInViewFilter">
+      <property name="singleSession" value="false"></property>
+      <property name="sessionFactoryBeanName" value="sessionFactory"></property>
+    </bean>
+    <!-- 字符转换过滤器,放于表现层struts或webservice之前 -->
+    <bean id="characterEncodingFilter" class="org.springframework.web.filter.CharacterEncodingFilter">
+      <property name="encoding" value="UTF-8"></property>
+      <property name="forceEncoding" value="true"></property>
+    </bean>
+
+	<!-- 过滤器设置 -->
+	<bean id="wondersCommonFilter" class="net.sf.acegisecurity.util.FilterChainProxy">
+		<property name="filterInvocationDefinitionSource">
+			<value>
+				CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISON
+				PATTERN_TYPE_APACHE_ANT
+
+				/ws/*.*=noneFilter
+				/**/*.gif=noneFilter
+				/**/*.png=noneFilter
+				/**/*.jpg=noneFilter
+				/**/*.css=noneFilter
+				/**/*.js=noneFilter
+				
+				/**/*.jsp*=hibernateFilter,characterEncodingFilter
+				/**/*.action*=hibernateFilter,characterEncodingFilter
+				/**/*.*=characterEncodingFilter
+			</value>
+		</property>
+	</bean>
+
+</beans>

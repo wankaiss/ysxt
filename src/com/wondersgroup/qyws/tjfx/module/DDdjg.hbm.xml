@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="DDdjg" table="DDdjg">
+		<id name="ddjg_id" column="ddjg_id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="admin_region_id" column="admin_region_id" type="java.lang.String" />
+		<property name="name" column="name" type="java.lang.String" />
+		<property name="abbr" column="abbr" type="java.lang.String" />
+		<property name="hosp_type" column="hosp_type" type="java.lang.String" />
+		<property name="hosp_class" column="hosp_class" type="java.lang.String" />
+		<property name="addr" column="addr" type="java.lang.String" />
+		<property name="zipcode" column="zipcode" type="java.lang.String" />
+		<property name="telephone" column="telephone" type="java.lang.String" />
+		<property name="contact_psn" column="contact_psn" type="java.lang.String" />
+		<property name="valid_flag" column="valid_flag" type="java.lang.String" />
+		<property name="qssj" column="qssj" type="java.util.Date" />
+		<property name="jssj" column="jssj" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

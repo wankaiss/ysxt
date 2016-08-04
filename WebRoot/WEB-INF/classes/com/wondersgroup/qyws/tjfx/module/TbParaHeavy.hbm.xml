@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="TbParaHeavy" table="TB_PARA_HEAVY">
+		<id name="ID" column="ID" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="QZM" column="QZM" type="java.lang.String" />
+		<property name="QZDM" column="QZDM" type="java.lang.String" />
+		<property name="QZJB" column="QZJB" type="java.lang.String" />
+		<property name="SJQZID" column="SJQZID" type="java.lang.String" />
+		<property name="TCDM" column="TCDM" type="java.lang.String" />
+		<property name="QZZ" column="QZZ" type="java.lang.Double" />
+		<property name="YXBZ" column="YXBZ" type="java.lang.String" />
+		<property name="XGSJ" column="XGSJ" type="java.util.Date" />
+		<property name="GZBZ" column="GZBZ" type="java.lang.Long" />
+	</class>
+</hibernate-mapping>

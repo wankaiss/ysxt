@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="FFyzfTrade" table="F_FYZF_TRADE">
+		<id name="jylsh" column="jylsh" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="jzbh" column="jzbh" type="java.lang.String" />
+		<property name="mxzdh" column="mxzdh" type="java.lang.String" />
+		<property name="jyjslb" column="jyjslb" type="java.lang.String" />
+		<property name="ybh" column="ybh" type="java.lang.String" />
+		<property name="zhh" column="zhh" type="java.lang.String" />
+		<property name="rylb" column="rylb" type="java.lang.String" />
+		<property name="ryzlb" column="ryzlb" type="java.lang.String" />
+		<property name="dylb" column="dylb" type="java.lang.String" />
+		<property name="xzlb" column="xzlb" type="java.lang.String" />
+		<property name="cbxzqh" column="cbxzqh" type="java.lang.String" />
+		<property name="jyqhdm" column="jyqhdm" type="java.lang.String" />
+		<property name="date_id" column="date_id" type="java.lang.Double" />
+		<property name="trade_time" column="trade_time" type="java.util.Date" />
+		<property name="takeout_prescrip_id" column="takeout_prescrip_id" type="java.lang.String" />
+		<property name="wpddjg_id" column="wpddjg_id" type="java.lang.String" />
+		<property name="wpdr_id" column="wpdr_id" type="java.lang.String" />
+		<property name="zd_group_id" column="zd_group_id" type="java.lang.String" />
+		<property name="ddjg_id" column="ddjg_id" type="java.lang.String" />
+		<property name="ddjgdj" column="ddjgdj" type="java.lang.String" />
+		<property name="dr_id" column="dr_id" type="java.lang.String" />
+		<property name="dept_id" column="dept_id" type="java.lang.String" />
+		<property name="fyze" column="fyze" type="java.lang.Double" />
+		<property name="xjazfs" column="xjazfs" type="java.lang.Double" />
+		<property name="xjbzfs" column="xjbzfs" type="java.lang.Double" />
+		<property name="xjczfs" column="xjczfs" type="java.lang.Double" />
+		<property name="xjdzfs" column="xjdzfs" type="java.lang.Double" />
+		<property name="dnzhzfs" column="dnzhzfs" type="java.lang.Double" />
+		<property name="lnzhzfs" column="lnzhzfs" type="java.lang.Double" />
+		<property name="xja_lnzh" column="xja_lnzh" type="java.lang.Double" />
+		<property name="xjb_lnzh" column="xjb_lnzh" type="java.lang.Double" />
+		<property name="xjc_lnzh" column="xjc_lnzh" type="java.lang.Double" />
+		<property name="xjd_lnzh" column="xjd_lnzh" type="java.lang.Double" />
+		<property name="tczfs" column="tczfs" type="java.lang.Double" />
+		<property name="jzzfs" column="jzzfs" type="java.lang.Double" />
+		<property name="gbzfs" column="gbzfs" type="java.lang.Double" />
+		<property name="fjzfs" column="fjzfs" type="java.lang.Double" />
+		<property name="ypts" column="ypts" type="java.lang.Integer" />
+		<property name="ypws" column="ypws" type="java.lang.Integer" />
+		<property name="dtjg" column="dtjg" type="java.lang.Double" />
+		<property name="ypfy" column="ypfy" type="java.lang.Double" />
+		<property name="zt" column="zt" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

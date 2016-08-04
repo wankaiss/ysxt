@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="TbParaCalcrule" table="TB_PARA_CALCRULE">
+		<id name="ID" column="ID" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="GZDM" column="GZDM" type="java.lang.String" />
+		<property name="GZMC" column="GZMC" type="java.lang.String" />
+		<property name="KSSJ" column="KSSJ" type="java.lang.String" />
+		<property name="JSSJ" column="JSSJ" type="java.lang.String" />
+		<property name="GZDY" column="GZDY" type="java.lang.String" />
+		<property name="JSDY" column="JSDY" type="java.lang.String" />
+		<property name="GZMS" column="GZMS" type="java.lang.String" />
+		<property name="YXBZ" column="YXBZ" type="java.lang.String" />
+		<property name="XGSJ" column="XGSJ" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

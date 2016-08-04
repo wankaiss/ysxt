@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="DPerson" table="DPerson">
+		<id name="ybh" column="ybh" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="zhh" column="zhh" type="java.lang.String" />
+		<property name="xm" column="xm" type="java.lang.String" />
+		<property name="xb" column="xb" type="java.lang.String" />
+		<property name="zjlx" column="zjlx" type="java.lang.String" />
+		<property name="sfzh" column="sfzh" type="java.lang.String" />
+		<property name="csrq" column="csrq" type="java.lang.Integer" />
+		<property name="mz" column="mz" type="java.lang.String" />
+		<property name="yb" column="yb" type="java.lang.String" />
+		<property name="dz" column="dz" type="java.lang.String" />
+		<property name="lxdh" column="lxdh" type="java.lang.String" />
+		<property name="dwdm" column="dwdm" type="java.lang.String" />
+		<property name="rylb" column="rylb" type="java.lang.String" />
+		<property name="ryzlb" column="ryzlb" type="java.lang.String" />
+		<property name="xzlb" column="xzlb" type="java.lang.String" />
+		<property name="xzqhdm" column="xzqhdm" type="java.lang.String" />
+		<property name="zhzt" column="zhzt" type="java.lang.String" />
+		<property name="tbbz" column="tbbz" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

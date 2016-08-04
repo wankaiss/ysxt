@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.task.module">
+	<class name="TbTaskDetailDic" table="TB_TASK_DETAIL_DIC">
+		<id name="dataId" column="data_id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="levelIndex" column="LEVEL_INDEX" type="java.lang.String" />
+		<property name="taskMean" column="TASK_MEAN" type="java.lang.String" />
+		<property name="groupName" column="GROUP_NAME" type="java.lang.String" />
+		<property name="taskDesc" column="TASK_DESC" type="java.lang.String" />
+		<property name="triggerId" column="TRIGGER_ID" type="java.lang.String" />
+		<property name="taskPath" column="TASK_PATH" type="java.lang.String" />
+		<property name="taskExpression" column="TASK_EXPRESSION" type="java.lang.String" />
+		<property name="startTime" column="TASK_BEGINTIME" type="java.util.Date" />
+		<property name="taskConfig" column="TASK_CONFIG" type="java.lang.String" />
+		<property name="taskConfigValue" column="TASK_CONFIG_VALUE" type="java.lang.String" />
+		<property name="method" column="TASK_METHOD" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

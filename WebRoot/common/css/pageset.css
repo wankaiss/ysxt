@@ -1,0 +1,6 @@
+.papper{font-size:12px;padding-right:5px;padding-left:5px;height:22px;line-height:22px;}
+.papper a{background:#ffffff;margin-right:5px;float:left;text-decoration:none;border:solid 1px #999999;color:#999999;display:inherit;padding:0px 8px;line-height:20px;}
+.papper a:hover{background:#ffffff;margin-right:5px;float:left;text-decoration:none;border:solid 1px #666666;color:#666666;display:inherit;padding:0px 8px;line-height:20px;}
+.papper span{background:#ffffff;float:left;display:block;padding:4px;margin-right:5px;display:inherit;padding:0px 8px;line-height:22px;}
+.papper .current{border:1px solid #FF8A00;background:#FF8A00;color:#fff;display:inherit;padding:0px 8px;line-height:20px;margin-right:5px;}
+.papper .current.prev,.pagination .current.next{color:#999999;border-color:#999999;background:#fff;display:inherit;padding:0px 8px;line-height:20px;}

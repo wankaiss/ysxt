@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="TbMbpyqd" table="TB_MBPYQD">
+		<id name="ID" column="ID" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="YBND" column="YBND" type="java.lang.Integer" />
+		<property name="SJDM" column="SJDM" type="java.lang.String" />
+		<property name="YBH" column="YBH" type="java.lang.String" />
+		<property name="SFZHM" column="SFZHM" type="java.lang.String" />
+		<property name="XM" column="XM" type="java.lang.String" />
+		<property name="NL" column="NL" type="java.lang.Integer" />
+		<property name="QXDM" column="QXDM" type="java.lang.String" />
+		<property name="TCDM" column="TCDM" type="java.lang.String" />
+		<property name="RYLB" column="RYLB" type="java.lang.String" />
+		<property name="JZLX" column="JZLX" type="java.lang.String" />
+		<property name="AAZ217" column="AAZ217" type="java.lang.Long" />
+		<property name="AAZ213" column="AAZ213" type="java.lang.Long" />
+		<property name="AKE001" column="AKE001" type="java.lang.String" />
+		<property name="AKE002" column="AKE002" type="java.lang.String" />
+		<property name="AKE003" column="AKE003" type="java.lang.String" />
+		<property name="AKC221" column="AKC221" type="java.util.Date" />
+		<property name="YXBZ" column="YXBZ" type="java.lang.String" />
+		<property name="XGSJ" column="XGSJ" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="TjYdLevel" table="TJ_YD_LEVEL">
+		<id name="ID" column="ID" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="akb020" column="AKB020" type="java.lang.String" />
+		<property name="akb021" column="AKB021" type="java.lang.String" />
+		<property name="aaa027" column="AAA027" type="java.lang.String" />
+		<property name="yddj" column="YDDJ" type="java.lang.String" />
+		<property name="YXBZ" column="YXBZ" type="java.lang.String" />
+		<property name="YDDJND" column="YDDJND" type="java.lang.String" />
+		<property name="xgsj" column="XGSJ" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

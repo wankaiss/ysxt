@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="Kc23" table="kc23">
+		<id name="aaz210" column="aaz210" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="aaz331" column="aaz331" type="java.lang.Long" />
+		<property name="aaz263" column="aaz263" type="java.lang.String" />
+		<property name="aab014" column="aab014" type="java.lang.String" />
+		<property name="aae072" column="aae072" type="java.lang.String" />
+		<property name="akc220" column="akc220" type="java.lang.Long" />
+		<property name="aka017" column="aka017" type="java.lang.String" />
+		<property name="aae019" column="aae019" type="java.lang.Double" />
+		<property name="aaz217" column="aaz217" type="java.lang.Long" />
+		<property name="aae418" column="aae418" type="java.lang.Long" />
+		<property name="akc221" column="akc221" type="java.util.Date" />
+		<property name="aka130" column="aka130" type="java.lang.String" />
+		<property name="aaz107" column="aaz107" type="java.lang.Long" />
+		<property name="aka122" column="aka122" type="java.lang.String" />
+		<property name="aae036" column="aae036" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

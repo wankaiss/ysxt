@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.wondersgroup.qyws.tjfx.module">
+	<class name="TbJobSchedule" table="TB_JOB_SCHEDULE">
+		<id name="ID" column="ID" type="java.lang.Long">
+			<generator class="assigned" />
+		</id>
+		<property name="RWLX" column="RWLX" type="java.lang.String" />
+		<property name="PARA1" column="PARA1" type="java.lang.String" />
+		<property name="PARA2" column="PARA2" type="java.lang.String" />
+		<property name="PARA3" column="PARA3" type="java.lang.String" />
+		<property name="PARA4" column="PARA4" type="java.lang.String" />
+		<property name="PARA5" column="PARA5" type="java.lang.String" />
+		<property name="PARA6" column="PARA6" type="java.lang.String" />
+		<property name="PARA7" column="PARA7" type="java.lang.String" />
+		<property name="PARA8" column="PARA8" type="java.lang.String" />
+		<property name="PARA9" column="PARA9" type="java.lang.String" />
+		<property name="PARA10" column="PARA10" type="java.lang.String" />
+		<property name="PARA11" column="PARA11" type="java.lang.String" />
+		<property name="PARA12" column="PARA12" type="java.lang.String" />
+		<property name="ZXZT" column="ZXZT" type="java.lang.String" />
+		<property name="ZXRID" column="ZXRID" type="java.lang.String" />
+		<property name="YJZXSJ" column="YJZXSJ" type="java.util.Date" />
+		<property name="YXJ" column="YXJ" type="java.lang.Double" />
+		<property name="ZXKSSJ" column="ZXKSSJ" type="java.util.Date" />
+		<property name="ZXJSSJ" column="ZXJSSJ" type="java.util.Date" />
+		<property name="YXBZ" column="YXBZ" type="java.lang.String" />
+		<property name="XGSJ" column="XGSJ" type="java.util.Date" />
+	</class>
+</hibernate-mapping>

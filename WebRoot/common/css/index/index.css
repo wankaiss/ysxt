@@ -1,0 +1,177 @@
+.divright{
+float:right;
+}
+.table tbody tr td{
+font-size:135%;
+}
+.nav li{
+background:#eeeeee;
+}
+ul li.active{
+background:#dfdede;
+}
+span.icon_doc {
+font-size:205%;
+}
+span.icon_drug{
+font-size:205%;
+}
+.table tr td.miss{
+color:rgba(254, 87, 87, 1);
+font-size:120%;
+}
+.box-popover{
+	z-index:9999;
+	position:fixed;
+	top:0;
+	left:0.3%;
+	width:99.4%;
+	height:100%;
+
+	border-radius:5px;
+	border:solid 2px #666;
+	background-color:#fff;
+	box-shadow:0 0 10px #666;
+	display:block;
+}
+.box-popover-mask{
+	z-index:9998;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.4;
+	display:block;
+}
+.box-poptit{
+	padding:5px;
+	position:relative;
+
+}
+.box-poptitle{
+	margin-top:5px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:5px;
+	height:25px;
+}
+.box-popcontent{
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:5px;
+	height:520px;
+}
+.box-poptit .close {
+	float:right;
+	color:black;
+	padding-top:5px;
+	padding-right:10px;
+	margin:-2px -5px -5px;
+
+	text-shadow:0 1px 0 #444
+	
+}
+.box-popbod{
+	padding:60px 15px;
+	color:#444;
+	height:68px;
+} 
+.boxform{
+	padding:5px 60px 5px;
+	text-align:center;
+}
+.box-table{
+	width:100%;
+	height:80%;
+}
+.box-changepassword{
+	margin:-50px -20px -50px 90px;
+	text-align:left;
+	font-size:14px;
+}
+li{
+	list-style-type:none;
+}
+.pager li{
+font-size:135%;
+}
+.pagination li{
+font-size:135%;
+}
+.nav li{
+font-size:135%;
+}
+a{outline:none;blr:expression(this.onFocus=this.blur());}
+li{outline:none;blr:expression(this.onFocus=this.blur());}
+label{
+	padding-top:4px;
+font-size:120%;
+}
+.table thead tr th{
+font:13px/34px Microsoft yahei;
+text-align:left;
+padding-left:16px;
+color:#2d77b3;
+background:#e2edf6;
+border-right:1px solid #fff;
+font-weight:bolder;
+font-size:15px;
+}
+.table tr td{
+text-align:left;
+font-size:140%;
+}
+div.tableContainer{
+height:480px;
+}
+input#pageText1{
+ width:40px;
+ display:inline;
+}
+input#pageText2{
+ width:40px;
+ display:inline;
+}
+input#pageText3{
+ width:40px;
+ display:inline;
+}
+input#pageText4{
+ width:40px;
+ display:inline;
+}
+input#goToPage1{
+ width:40px;
+ display:inline;
+}
+input#goToPage2{
+ width:40px;
+ display:inline;
+}
+input#goToPage3{
+ width:40px;
+ display:inline;
+}
+input#goToPage4{
+ width:40px;
+ display:inline;
+}
+div#div_yydds_dapps_yqwxy{
+ display:none;
+}
+div#div_dysrk_yapps{
+ display:none;
+}
+div#div_dcwrz_dyyzf{
+ display:none;
+}
+div#div_yyyzf{
+ display:none;
+}
+.index_loading{
+ margin-bottom: 7px;
+ margin-top: 7px;	
+}

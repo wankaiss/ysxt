@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 开启使用开发模式，详细错误提示  -->
+	<constant name="struts.devMode" value="false" />
+	<!-- 指定资源编码类型 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 指定每次请求到达，重新加载资源文件 -->
+	<constant name="struts.i18n.reload" value="false" />
+	<!-- 指定每次配置文件更改后，自动重新加载 -->
+	<constant name="struts.configuration.xml.reload" value="false" />
+	<!-- 文件上传大小 -->
+	<constant name="struts.multipart.maxSize" value="20971520" />
+	<!-- 默认的视图主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 将对象交给spring管理  -->
+	<constant value="org.apache.struts2.spring.StrutsSpringObjectFactory" name="struts.objectFactory" />
+	
+	<package name="loginlog" extends="struts-default">
+		<interceptors>
+			
+			<interceptor-stack name="baseStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		 <!-- 配置默认拦截器栈 -->
+		<default-interceptor-ref name="baseStack" />
+		
+		<global-results>
+			<result name="login" type="redirect">${pageContext.request.contextPath }/login.jsp</result>   
+       	</global-results>
+    </package>
+	
+	<package name="com.wondersgroup" extends="struts-default">
+		<interceptors>
+			<!-- 去掉参数左右的空格 -->
+			<interceptor name="trim" class="com.wondersgroup.qyws.tjfx.action.interceptor.TrimInterceptor"/>
+			<interceptor-stack name="baseStack">	
+				<interceptor-ref name="trim" />
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		 <!-- 配置默认拦截器栈 -->
+		<default-interceptor-ref name="baseStack" />
+		
+		<global-results>
+			<result name="login" type="redirect">${pageContext.request.contextPath }/login.jsp</result>   
+       	</global-results>
+    </package>
+    
+    
+
+    
+	<!-- 引入其他struts配置文件 -->
+	<include file="struts-index.xml"></include>
+	<include file="struts-hztj.xml"></include>
+	<include file="struts-ywjc.xml"></include>
+	
+</struts>    

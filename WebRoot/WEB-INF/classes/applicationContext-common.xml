@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	<!-- 使用 annotation -->
+	<context:annotation-config />
+	<!-- 使用 annotation 自动注册bean,并检查@Controller, @Service, @Repository注解已被注入 -->
+	<context:component-scan base-package="com.wondersgroup.qyws.*" />
+	<!-- hibernate属性配置 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<description>属性配置接入</description>
+		<property name="locations">
+			<list>
+				<value>classpath:hibernate.properties</value>
+			</list>
+		</property>
+	</bean>
+
+   <!-- 配置dataSource 使用apache的dbcp数据源 -->
+   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		
+		<property name="driverClassName" value="${dataSource.driverClassName}" />
+		<property name="url" value="jdbc:oracle:thin:@10.248.1.25:1521:nybdw" />
+		<property name="username" value="zhfxpt" />
+		<property name="password" value="zhfx" />
+		<!--<property name="username" value="ZNFXPT" />
+		<property name="password" value="ZNFXPT" />
+		-->
+		<!--
+		<property name="driverClassName" value="${dataSource.driverClassName}" />
+		<property name="url" value="jdbc:oracle:thin:@10.248.1.19:1523:nybdw" />
+		<property name="username" value="znfxpt" />
+		<property name="password" value="znfxpt" />
+		-->
+		<!--
+		<property name="url" value="${dataSource.url}" />
+		<property name="username" value="${dataSource.username}" />
+		<property name="password" value="${dataSource.password}" />
+		-->
+		<property name="defaultAutoCommit" value="false" />
+		<!-- 服务器环境配置 -->
+		 
+		<property name="initialSize" value="10"/> 
+		<property name="maxIdle" value="100"/> 
+		<property name="minIdle" value="100"/> 
+		<property name="maxActive" value="500"/> 
+		<property name="removeAbandoned" value="true"/> 
+		<property name="removeAbandonedTimeout" value="180"/> 
+		<property name="maxWait" value="6000"/> 
+		
+		 <!-- 服务器环境配置 -->
+		 
+		<!-- 开发配置 --> 
+		<!--
+		<property name="initialSize" value="5" />
+		<property name="maxActive" value="50" />
+		<property name="maxIdle" value="10"></property>
+		<property name="minIdle" value="10" />
+		<property name="removeAbandoned" value="true"/> 
+		<property name="removeAbandonedTimeout" value="180"/> 
+		<property name="maxWait" value="3000"/>
+		-->
+		<!-- 开发配置 --> 
+	</bean> 
+	
+	
+	<!-- 配置sessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${dataSource.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+			</props>
+		</property>
+		<!-- mapping 该处配置成mappingDirectoryLocations等方式，在weblogic下出错-->
+		<property name="mappingResources">
+			<list>	
+				<!--<value>com/wondersgroup/qyws/task/module/TbTaskDetail.hbm.xml</value>
+				<value>com/wondersgroup/qyws/task/module/TbTaskDetailDic.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/Kc21.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/Kc22.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/Kc23.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/Kc24.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/Kb01.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/Kf05.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/Kf06.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbJobSchedule.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbParaCalcrule.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbParaGrade.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbParaHeavy.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbStatsDoctorDrug.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbStatsDrug.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbStatsInstitutionDrug.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbStatsInstitutionIndicator.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbStatsJgSum.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbStatsMrDetail.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/TbStatsMrSum.hbm.xml</value>
+				-->
+				<value>com/wondersgroup/qyws/tjfx/module/DAdminRegion.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/DDate.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/DDdjg.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/DDoctor.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/DHospitalDept.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/DPerson.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/FFymxTrade.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/FFyzfTrade.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/FZyypTradeDrSum2.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/FZyypTradeDrZyypSum2.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/FZyypTradeOrgSum3.hbm.xml</value>
+				<value>com/wondersgroup/qyws/tjfx/module/FZyypTradeOrgZyypSum3.hbm.xml</value>
+			</list>
+		</property>
+		
+	</bean>
+	
+	<!-- 配置事务管理 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 配置注解实现管理事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+		
+	<import resource="classpath:applicationContext-task.xml"/>
+	
+</beans>

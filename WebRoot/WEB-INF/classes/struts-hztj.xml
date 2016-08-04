@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="json-default" namespace="/">
+	
+		<action name="*_*" class="{1}Action" method="{2}">
+			<result name="success">${page}</result>
+			<result name="redirect" type="redirect">${page}</result>
+			<result name="chain" type="chain">${page}</result>
+			<result type="json" name="type_object">
+				<param name="root">object</param>
+			</result>	
+			<result name="gotoout">/login.jsp</result>
+		</action>	
+
+		<action name="loginYsxt" class="com.wondersgroup.qyws.tjfx.action.index.IndexAction" method="gotoMain">
+			<result>/WEB-INF/web/index/index.jsp</result>
+			<result name="gotoout">/login.jsp</result>
+		</action>
+				
+		<!-- 全市汇总top.jsp -->
+		<action name="qshztop">
+		   <result name="success">/WEB-INF/web/hztj/qshztop.jsp</result>
+		</action>
+	
+	</package>
+</struts>    
